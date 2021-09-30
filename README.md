@@ -1,4 +1,4 @@
-#Projeto de cadastro de candidatos.
+# Projeto de cadastro de candidatos.
 Projeto realizado usando thymeleaf e Spring Boot MVC.
 
 O formulário solicita informações do candidato, sendo:
