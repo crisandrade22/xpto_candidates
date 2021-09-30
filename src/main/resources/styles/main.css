@@ -1,0 +1,72 @@
+td .errormessage {
+    width: 11rem;
+    font-weight: bold;
+    color: red;
+}
+
+.name {
+    width: 30rem;
+    font-weight: bold;
+}
+.surname {
+    width: 30rem;
+    font-weight: bold;
+}
+.cpf {
+    width: 11rem;
+    font-weight: bold;
+}
+.age {
+    width: 5rem;
+    font-weight: bold;
+}
+.underage {
+    width: 5rem;
+    font-weight: bold;
+}
+.position {
+    width: 5rem;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 0.1rem solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;        <div class="container">
+
+}
+
+th[scope="col"] {        <div class=        <div class="container">
+"container">
+
+    background-color: #696969;
+    color: #fff;
+}
+
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    margin: 1rem;
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+}
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Candidates Registration</title>
+    <link th:href="@{styles/main.css}" rel="stylesheet"/>
+</head>
+
+<body>
+<form action="#" th:action="@{/}" th:object="${personForm}" method="post">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" th:field="*{name}"/></td>
+            <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
+        </tr>
+        <tr>
+            <td>Surname:</td>
+            <td><input type="text" th:field="*{surname}"/></td>
+            <td th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}">Surname Error</td>
+        </tr>
+        <tr>
+            <td>CPF:</td>
+            <td><input type="text" th:field="*{cpf}"/></td>
+            <td th:if="${#fields.hasErrors('cpf')}" th:errors="*{cpf}">CPF Error</td>
+        </tr>
+        <tr>
+            <td>Birth Date:</td>
+            <td><input type="text" th:field="*{birthDate}"/></td>
+            <td th:if="${#fields.hasErrors('birthDate')}" th:errors="*{birthDate}">Birth Date Error</td>
+        </tr>
+        <tr>
+            <td>Position:</td>
+            <td>
+                <select th:field="*{position}">
+                    <option th:each="position : ${positions}" th:value="${position}"
+                            th:text="'Position ' + ${position}">
+                    </option>
+                </select>
+            </td>
+            <td th:if="${positionAlreadyFilledUp}" class="errormessage"> Position is already filled up.</td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+            <td th:if="${@webController.isMaxCandidatesNumberReached()}" class="errormessage"> You've reached the limit.</td>
+            <td th:if="${cpfExists}" class="errormessage"> CPF already exists.</td>
+        </tr>
+    </table>
+</form>
+<form th:action="@{/results}" method="get">
+    <div class="container">
+        <table class="table table-striped">
+            <div></div>
+            <thead>
+            <tr>
+                <td class="name"> Name</td>
+                <td class="surname"> Surname</td>
+                <td class="cpf"> CPF</td>
+                <td class="age"> Age</td>
+                <td class="underage"> Is underage?</td>
+                <td class="position"> Position</td>
+            </tr>
+
+            </thead>
+            <tbody>
+            <tr th:each="person : ${people}">
+                <td><span th:text="${person.name}">  </span></td>
+                <td><span th:text="${person.surname}">  </span></td>
+                <td><span th:text="${person.cpf}">  </span></td>
+                <td><span th:text="${person.age}">  </span></td>
+                <td><span th:text="${person.overEighteen}">  </span></td>
+                <td><span th:text="${person.position}"> </span></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="save">Save</button>
+                </td>
+            </tr>
+            <tr>
+                <td th:if="${saveButtonClicked && people.isEmpty}" class="errormessage"> You must register at least one
+                    candidate!?!
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+</body>
+</html>

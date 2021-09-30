@@ -1,0 +1,151 @@
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Naruto
+&surname=Uzumaki
+&cpf=992.313.820-80
+&birthDate=1988-04-23
+&position=1
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Sasuke
+&surname=Uchiha
+&cpf=711.944.910-90
+&birthDate=2004-08-28
+&position=1
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Sakura
+&surname=Haruno
+&cpf=847.666.320-01
+&birthDate=2000-12-14
+&position=1
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Kakashi
+&surname=Hatake
+&cpf=073.642.020-72
+&birthDate=1985-07-22
+&position=2
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Hinata
+&surname=Hyuga
+&cpf=263.440.010-11
+&birthDate=2002-05-10
+&position=2
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Kiba
+&surname=Inuzuka
+&cpf=622.966.510-70
+&birthDate=1989-03-25
+&position=2
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Shino
+&surname=Aburame
+&cpf=885.769.580-82
+&birthDate=2007-01-13
+&position=3
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Kurenai
+&surname=Yuhi
+&cpf=671.048.960-40
+&birthDate=2001-02-17
+&position=3
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Shikamaru
+&surname=Nara
+&cpf=878.786.080-59
+&birthDate=1989-07-13
+&position=3
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Choji
+&surname=Akimichi
+&cpf=919.155.260-51
+&birthDate=1987-09-30
+&position=4
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Ino
+&surname=Yamanaka
+&cpf=281.389.720-50
+&birthDate=2002-08-14
+&position=4
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Asuma
+&surname=Sarutobi
+&cpf=633.111.400-95
+&birthDate=1985-11-24
+&position=4
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Rock
+&surname=Lee
+&cpf=546.226.480-16
+&birthDate=1983-10-30
+&position=5
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Neji
+&surname=Hyuga
+&cpf=435.187.640-98
+&birthDate=2000-05-31
+&position=5
+
+###
+POST http://localhost:8080/
+Content-Type: application/x-www-form-urlencoded
+
+name=Might
+&surname=Guy
+&cpf=679.250.210-39
+&birthDate=1985-03-15
+&position=5
+
+###
+
